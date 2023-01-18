@@ -5,6 +5,7 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.time.Duration;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
@@ -13,6 +14,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class EventsPage {
 	WebDriver driver;
@@ -31,7 +34,7 @@ public class EventsPage {
 	WebElement EvThumbImageUploadBtn;
 	@FindBy(xpath = "//span[text()='Add Images']")
 	WebElement EvAddImgBtn;
-	@FindBy(xpath = "//button[@type='submit']")
+	@FindBy(xpath = "//button[@type='submit']/span[text()='Add']")
 	WebElement AddBtn;
 
 	@FindBy(xpath = "(//div[@class='editBtn'])[3]")
@@ -86,7 +89,7 @@ public class EventsPage {
 		WebElement uploadThumbImg = driver.findElement(By.xpath("//span[text()='Upload']"));
 		act.moveToElement(uploadThumbImg).click().perform();
 		Thread.sleep(2000);
-	 driver.findElement(By.xpath("//span[text()='Upload']")).click();
+	// driver.findElement(By.xpath("//span[text()='Upload']")).click();
 	// uploadfile("C:\\Users\\Brigosha_Guest\\Desktop\\EventPic.jpg");
 		 
 		 Robot rb=new Robot();
@@ -101,28 +104,52 @@ public class EventsPage {
 		 
 		 rb.keyRelease(KeyEvent.VK_CONTROL);
 		 rb.keyRelease(KeyEvent.VK_V);
-		 rb.delay(2000);
+		 rb.delay(5000);
 		 //Enter
 		 
 		rb.keyPress(KeyEvent.VK_ENTER);
+		 rb.delay(1000);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 		 
 		 
 		 
 		//uploadfile("C:\\Users\\Brigosha_Guest\\Desktop\\EventPic.jpg");
 		System.out.println("Event Thumbnail image is  gets uploaded..");
-		//Thread.sleep(5000);
-		//WebElement EventImages = driver.findElement(By.xpath("//span[text()='Add Images']"));
-		//act.moveToElement(EventImages).click().perform();
-		//Thread.sleep(2000);
-	//	uploadfile("C:\\Users\\Brigosha_Guest\\Desktop\\EventPic.jpg");
+		Thread.sleep(8000);
+		WebElement EventImages = driver.findElement(By.xpath("//span[text()='Add Images']"));
+		act.moveToElement(EventImages).click().perform();
+		Thread.sleep(2000);
+		//uploadfile("C:\\Users\\Brigosha_Guest\\Desktop\\EventPic.jpg");
 
-		//System.out.println("Event  image is  gets uploaded..");
+		rb.delay(2000);
+		 StringSelection sb=new StringSelection("C:\\Users\\Brigosha_Guest\\Desktop\\EventPic.jpg");
+		 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sb, null);
+		 
+		// Contrl+V 
+		 rb.keyPress(KeyEvent.VK_CONTROL);
+		 rb.keyPress(KeyEvent.VK_V);
+		 rb.delay(2000);
+		 
+		 rb.keyRelease(KeyEvent.VK_CONTROL);
+		 rb.keyRelease(KeyEvent.VK_V);
+		 rb.delay(9000);
+		 //Enter
+		 
+		rb.keyPress(KeyEvent.VK_ENTER);
+		 rb.delay(9000);
+		rb.keyRelease(KeyEvent.VK_ENTER);
+		
+		
+		
+		System.out.println("Event  image is  gets uploaded..");
 
 		//Thread.sleep(3000);
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(8000));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']/span[text()='Add']")));
+		driver.findElement(By.xpath("//button[@type='submit']/span[text()='Add']")).click();
 		//AddBtn.click();
-		//Thread.sleep(1000);
-		//System.out.println("Events gets successfully created.");
+		Thread.sleep(1000);
+		System.out.println("Events gets successfully created.");
 
 	}
 

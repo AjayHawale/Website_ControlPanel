@@ -2,7 +2,7 @@
 <testng-results ignored="2" total="16" passed="2" failed="10" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-16T18:12:44 IST" name="Suite" finished-at="2023-01-16T18:16:23 IST" duration-ms="218543">
+  <suite started-at="2023-01-17T12:17:36 IST" name="Suite" finished-at="2023-01-17T12:21:51 IST" duration-ms="254756">
     <groups>
       <group name="EMagazine">
         <method signature="EMagazinePageTest.addingMagazine()[pri:6, instance:Test.EMagazinePageTest@71d44a3]" name="addingMagazine" class="Test.EMagazinePageTest"/>
@@ -14,13 +14,13 @@
         <method signature="EventsPageTest.EventsEdit()[pri:2, instance:Test.EventsPageTest@55141def]" name="EventsEdit" class="Test.EventsPageTest"/>
       </group> <!-- EventsP -->
     </groups>
-    <test started-at="2023-01-16T18:12:44 IST" name="Test" finished-at="2023-01-16T18:16:23 IST" duration-ms="218543">
+    <test started-at="2023-01-17T12:17:36 IST" name="Test" finished-at="2023-01-17T12:21:51 IST" duration-ms="254756">
       <class name="Test.EMagazinePageTest">
-        <test-method is-config="true" signature="objectInitiate()[pri:0, instance:Test.EMagazinePageTest@71d44a3]" started-at="2023-01-16T18:14:00 IST" name="objectInitiate" finished-at="2023-01-16T18:14:00 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="objectInitiate()[pri:0, instance:Test.EMagazinePageTest@71d44a3]" started-at="2023-01-17T12:19:28 IST" name="objectInitiate" finished-at="2023-01-17T12:19:28 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- objectInitiate -->
-        <test-method signature="enteringMagazinePage()[pri:5, instance:Test.EMagazinePageTest@71d44a3]" started-at="2023-01-16T18:14:00 IST" name="enteringMagazinePage" depends-on-groups="EventsP" finished-at="2023-01-16T18:14:00 IST" duration-ms="1" status="SKIP">
+        <test-method signature="enteringMagazinePage()[pri:5, instance:Test.EMagazinePageTest@71d44a3]" started-at="2023-01-17T12:19:28 IST" name="enteringMagazinePage" depends-on-groups="EventsP" finished-at="2023-01-17T12:19:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method EMagazinePageTest.enteringMagazinePage()[pri:5, instance:Test.EMagazinePageTest@71d44a3] depends on not successfully finished methods in group "EventsP"]]>
@@ -52,7 +52,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enteringMagazinePage -->
-        <test-method signature="addingMagazine()[pri:6, instance:Test.EMagazinePageTest@71d44a3]" started-at="2023-01-16T18:14:00 IST" name="addingMagazine" finished-at="2023-01-16T18:14:22 IST" duration-ms="22441" status="FAIL">
+        <test-method signature="addingMagazine()[pri:6, instance:Test.EMagazinePageTest@71d44a3]" started-at="2023-01-17T12:19:28 IST" name="addingMagazine" finished-at="2023-01-17T12:19:50 IST" duration-ms="22411" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='date']"}
@@ -61,9 +61,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=//input[@id='date']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b]]>
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=//input[@id='date']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='date']"}
@@ -72,9 +72,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=//input[@id='date']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=//input[@id='date']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -130,7 +130,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingMagazine -->
-        <test-method signature="editingMagazine()[pri:7, instance:Test.EMagazinePageTest@71d44a3]" started-at="2023-01-16T18:14:22 IST" name="editingMagazine" finished-at="2023-01-16T18:14:42 IST" duration-ms="20067" status="FAIL">
+        <test-method signature="editingMagazine()[pri:7, instance:Test.EMagazinePageTest@71d44a3]" started-at="2023-01-17T12:19:50 IST" name="editingMagazine" finished-at="2023-01-17T12:20:10 IST" duration-ms="20073" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='editBtn'])[1]"}
@@ -139,9 +139,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//div[@class='editBtn'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b]]>
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//div[@class='editBtn'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='editBtn'])[1]"}
@@ -150,9 +150,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//div[@class='editBtn'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//div[@class='editBtn'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -208,7 +208,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editingMagazine -->
-        <test-method signature="deleteMagazine()[pri:8, instance:Test.EMagazinePageTest@71d44a3]" started-at="2023-01-16T18:14:42 IST" name="deleteMagazine" finished-at="2023-01-16T18:15:02 IST" duration-ms="20105" status="FAIL">
+        <test-method signature="deleteMagazine()[pri:8, instance:Test.EMagazinePageTest@71d44a3]" started-at="2023-01-17T12:20:10 IST" name="deleteMagazine" finished-at="2023-01-17T12:20:30 IST" duration-ms="20020" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='deleteBtn'])[1]"}
@@ -217,9 +217,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//div[@class='deleteBtn'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b]]>
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//div[@class='deleteBtn'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='deleteBtn'])[1]"}
@@ -228,9 +228,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//div[@class='deleteBtn'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//div[@class='deleteBtn'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -286,7 +286,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteMagazine -->
-        <test-method signature="paginationTest()[pri:9, instance:Test.EMagazinePageTest@71d44a3]" started-at="2023-01-16T18:15:02 IST" name="paginationTest" finished-at="2023-01-16T18:15:22 IST" duration-ms="20111" status="FAIL">
+        <test-method signature="paginationTest()[pri:9, instance:Test.EMagazinePageTest@71d44a3]" started-at="2023-01-17T12:20:30 IST" name="paginationTest" finished-at="2023-01-17T12:20:50 IST" duration-ms="20022" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//button[@class='ant-pagination-item-link'])[2]"}
@@ -295,9 +295,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//button[@class='ant-pagination-item-link'])[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b]]>
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//button[@class='ant-pagination-item-link'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button[@class='ant-pagination-item-link'])[2]"}
@@ -306,9 +306,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//button[@class='ant-pagination-item-link'])[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//button[@class='ant-pagination-item-link'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -363,11 +363,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- paginationTest -->
       </class> <!-- Test.EMagazinePageTest -->
       <class name="Test.LocationPageTest">
-        <test-method is-config="true" signature="objectInitiate()[pri:0, instance:Test.LocationPageTest@73a1e9a9]" started-at="2023-01-16T18:15:22 IST" name="objectInitiate" finished-at="2023-01-16T18:15:22 IST" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="objectInitiate()[pri:0, instance:Test.LocationPageTest@73a1e9a9]" started-at="2023-01-17T12:20:50 IST" name="objectInitiate" finished-at="2023-01-17T12:20:50 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- objectInitiate -->
-        <test-method signature="enteringLoc()[pri:10, instance:Test.LocationPageTest@73a1e9a9]" started-at="2023-01-16T18:15:22 IST" name="enteringLoc" depends-on-groups="EMagazine" finished-at="2023-01-16T18:15:22 IST" duration-ms="1" status="SKIP">
+        <test-method signature="enteringLoc()[pri:10, instance:Test.LocationPageTest@73a1e9a9]" started-at="2023-01-17T12:20:50 IST" name="enteringLoc" depends-on-groups="EMagazine" finished-at="2023-01-17T12:20:50 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method LocationPageTest.enteringLoc()[pri:10, instance:Test.LocationPageTest@73a1e9a9] depends on not successfully finished methods in group "EMagazine"]]>
@@ -399,7 +399,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enteringLoc -->
-        <test-method signature="Editloc()[pri:11, instance:Test.LocationPageTest@73a1e9a9]" started-at="2023-01-16T18:15:22 IST" name="Editloc" finished-at="2023-01-16T18:15:43 IST" duration-ms="20077" status="FAIL">
+        <test-method signature="Editloc()[pri:11, instance:Test.LocationPageTest@73a1e9a9]" started-at="2023-01-17T12:20:51 IST" name="Editloc" finished-at="2023-01-17T12:21:11 IST" duration-ms="20028" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='editBtn'])[1]"}
@@ -408,9 +408,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//div[@class='editBtn'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b]]>
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//div[@class='editBtn'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='editBtn'])[1]"}
@@ -419,9 +419,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//div[@class='editBtn'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//div[@class='editBtn'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -477,7 +477,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Editloc -->
-        <test-method signature="deleteLoc()[pri:12, instance:Test.LocationPageTest@73a1e9a9]" started-at="2023-01-16T18:15:43 IST" name="deleteLoc" finished-at="2023-01-16T18:16:03 IST" duration-ms="20068" status="FAIL">
+        <test-method signature="deleteLoc()[pri:12, instance:Test.LocationPageTest@73a1e9a9]" started-at="2023-01-17T12:21:11 IST" name="deleteLoc" finished-at="2023-01-17T12:21:31 IST" duration-ms="20021" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='deleteBtn'])[1]"}
@@ -486,9 +486,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//div[@class='deleteBtn'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b]]>
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//div[@class='deleteBtn'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='deleteBtn'])[1]"}
@@ -497,9 +497,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//div[@class='deleteBtn'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//div[@class='deleteBtn'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -555,7 +555,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteLoc -->
-        <test-method signature="paginationTest()[pri:13, instance:Test.LocationPageTest@73a1e9a9]" started-at="2023-01-16T18:16:03 IST" name="paginationTest" finished-at="2023-01-16T18:16:23 IST" duration-ms="20109" status="FAIL">
+        <test-method signature="paginationTest()[pri:13, instance:Test.LocationPageTest@73a1e9a9]" started-at="2023-01-17T12:21:31 IST" name="paginationTest" finished-at="2023-01-17T12:21:51 IST" duration-ms="20042" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//button[@class='ant-pagination-item-link'])[2]"}
@@ -564,9 +564,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//button[@class='ant-pagination-item-link'])[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b]]>
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//button[@class='ant-pagination-item-link'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button[@class='ant-pagination-item-link'])[2]"}
@@ -575,9 +575,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//button[@class='ant-pagination-item-link'])[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//button[@class='ant-pagination-item-link'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -632,23 +632,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- paginationTest -->
       </class> <!-- Test.LocationPageTest -->
       <class name="Test.EventsPageTest">
-        <test-method is-config="true" signature="initilization()[pri:0, instance:Test.EventsPageTest@55141def]" started-at="2023-01-16T18:12:38 IST" name="initilization" finished-at="2023-01-16T18:12:44 IST" duration-ms="5712" status="PASS">
+        <test-method is-config="true" signature="initilization()[pri:0, instance:Test.EventsPageTest@55141def]" started-at="2023-01-17T12:17:12 IST" name="initilization" finished-at="2023-01-17T12:17:36 IST" duration-ms="23473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilization -->
-        <test-method is-config="true" signature="objectInitiate()[pri:0, instance:Test.EventsPageTest@55141def]" started-at="2023-01-16T18:12:44 IST" name="objectInitiate" finished-at="2023-01-16T18:12:44 IST" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="objectInitiate()[pri:0, instance:Test.EventsPageTest@55141def]" started-at="2023-01-17T12:17:36 IST" name="objectInitiate" finished-at="2023-01-17T12:17:36 IST" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- objectInitiate -->
-        <test-method signature="displayLogo()[pri:0, instance:Test.EventsPageTest@55141def]" started-at="2023-01-16T18:12:44 IST" name="displayLogo" finished-at="2023-01-16T18:12:44 IST" duration-ms="112" status="PASS">
+        <test-method signature="displayLogo()[pri:0, instance:Test.EventsPageTest@55141def]" started-at="2023-01-17T12:17:36 IST" name="displayLogo" finished-at="2023-01-17T12:17:36 IST" duration-ms="122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- displayLogo -->
-        <test-method signature="EventsAdd()[pri:1, instance:Test.EventsPageTest@55141def]" started-at="2023-01-16T18:12:45 IST" name="EventsAdd" finished-at="2023-01-16T18:12:59 IST" duration-ms="14434" status="PASS">
+        <test-method signature="EventsAdd()[pri:1, instance:Test.EventsPageTest@55141def]" started-at="2023-01-17T12:17:36 IST" name="EventsAdd" finished-at="2023-01-17T12:18:28 IST" duration-ms="51420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EventsAdd -->
-        <test-method signature="EventsEdit()[pri:2, instance:Test.EventsPageTest@55141def]" started-at="2023-01-16T18:12:59 IST" name="EventsEdit" finished-at="2023-01-16T18:13:19 IST" duration-ms="20123" status="FAIL">
+        <test-method signature="EventsEdit()[pri:2, instance:Test.EventsPageTest@55141def]" started-at="2023-01-17T12:18:28 IST" name="EventsEdit" finished-at="2023-01-17T12:18:48 IST" duration-ms="20090" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='editBtn'])[3]"}
@@ -657,9 +657,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//div[@class='editBtn'])[3]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b]]>
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//div[@class='editBtn'])[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='editBtn'])[3]"}
@@ -668,9 +668,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//div[@class='editBtn'])[3]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//div[@class='editBtn'])[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -690,8 +690,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at PageOrder.EventsPage.editEvent(EventsPage.java:130)
-at Test.EventsPageTest.EventsEdit(EventsPageTest.java:27)
+at PageOrder.EventsPage.editEvent(EventsPage.java:157)
+at Test.EventsPageTest.EventsEdit(EventsPageTest.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -726,7 +726,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EventsEdit -->
-        <test-method signature="EventsDelete()[pri:3, instance:Test.EventsPageTest@55141def]" started-at="2023-01-16T18:13:19 IST" name="EventsDelete" finished-at="2023-01-16T18:13:39 IST" duration-ms="20125" status="FAIL">
+        <test-method signature="EventsDelete()[pri:3, instance:Test.EventsPageTest@55141def]" started-at="2023-01-17T12:18:48 IST" name="EventsDelete" finished-at="2023-01-17T12:19:08 IST" duration-ms="20065" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='deleteBtn'])[5]"}
@@ -735,9 +735,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//div[@class='deleteBtn'])[5]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b]]>
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//div[@class='deleteBtn'])[5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='deleteBtn'])[5]"}
@@ -746,9 +746,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=(//div[@class='deleteBtn'])[5]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=(//div[@class='deleteBtn'])[5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -768,8 +768,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at PageOrder.EventsPage.deleteEvent(EventsPage.java:144)
-at Test.EventsPageTest.EventsDelete(EventsPageTest.java:32)
+at PageOrder.EventsPage.deleteEvent(EventsPage.java:171)
+at Test.EventsPageTest.EventsDelete(EventsPageTest.java:34)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -804,7 +804,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EventsDelete -->
-        <test-method signature="PaginationTest()[pri:4, instance:Test.EventsPageTest@55141def]" started-at="2023-01-16T18:13:39 IST" name="PaginationTest" finished-at="2023-01-16T18:13:59 IST" duration-ms="20181" status="FAIL">
+        <test-method signature="PaginationTest()[pri:4, instance:Test.EventsPageTest@55141def]" started-at="2023-01-17T12:19:08 IST" name="PaginationTest" finished-at="2023-01-17T12:19:28 IST" duration-ms="20062" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='ant-pagination-item ant-pagination-item-3']"}
@@ -813,9 +813,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=//li[@class='ant-pagination-item ant-pagination-item-3']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b]]>
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=//li[@class='ant-pagination-item ant-pagination-item-3']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='ant-pagination-item ant-pagination-item-3']"}
@@ -824,9 +824,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-91HRFE0', ip: '20.0.6.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e5c01f413ac3ee9a0061db6bbac0e4b, findElement {using=xpath, value=//li[@class='ant-pagination-item ant-pagination-item-3']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57856/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e5c01f413ac3ee9a0061db6bbac0e4b
+Command: [b816856b3e15f4f44c37382f04fe15a8, findElement {using=xpath, value=//li[@class='ant-pagination-item ant-pagination-item-3']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\BRIGOS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b816856b3e15f4f44c37382f04fe15a8
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -846,8 +846,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at PageOrder.EventsPage.pagination(EventsPage.java:151)
-at Test.EventsPageTest.PaginationTest(EventsPageTest.java:37)
+at PageOrder.EventsPage.pagination(EventsPage.java:178)
+at Test.EventsPageTest.PaginationTest(EventsPageTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

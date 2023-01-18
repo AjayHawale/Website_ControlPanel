@@ -1,5 +1,12 @@
 package PageOrder;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+import java.time.Duration;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +14,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class EMagazinePage {
 	WebDriver driver;
@@ -67,25 +76,69 @@ public class EMagazinePage {
 
 	}
 
-	public void uploadFile() throws InterruptedException {
+	public void uploadFile() throws InterruptedException, AWTException {
+
 		Actions act = new Actions(driver);
 		WebElement uploadCoverImg = driver.findElement(By.xpath("//span[text()='Upload cover image']"));
 		act.moveToElement(uploadCoverImg).click().perform();
 		Thread.sleep(2000);
-		uploadfile("C:\\Users\\Brigosha_Guest\\Desktop\\EventPic.jpg");
+		// driver.findElement(By.xpath("//span[text()='Upload']")).click();
+		// uploadfile("C:\\Users\\Brigosha_Guest\\Desktop\\EventPic.jpg");
+
+		Robot rb = new Robot();
+		rb.delay(2000);
+		StringSelection ss = new StringSelection("C:\\Users\\Brigosha_Guest\\Desktop\\EventPic.jpg");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+
+		// Contrl+V
+		rb.keyPress(KeyEvent.VK_CONTROL);
+		rb.keyPress(KeyEvent.VK_V);
+		rb.delay(2000);
+
+		rb.keyRelease(KeyEvent.VK_CONTROL);
+		rb.keyRelease(KeyEvent.VK_V);
+		rb.delay(5000);
+		// Enter
+
+		rb.keyPress(KeyEvent.VK_ENTER);
+		rb.delay(1000);
+		rb.keyRelease(KeyEvent.VK_ENTER);
+
+		// uploadfile("C:\\Users\\Brigosha_Guest\\Desktop\\EventPic.jpg");
 		System.out.println("Magazine Cover image is  gets uploaded..");
-		Thread.sleep(5000);
-		WebElement EventImages = driver.findElement(By.xpath("//span[text()='Upload Magazine File']"));
-		act.moveToElement(EventImages).click().perform();
+		Thread.sleep(8000);
+		WebElement UploadMagazine = driver.findElement(By.xpath("//span[text()='Upload Magazine File']"));
+		act.moveToElement(UploadMagazine).click().perform();
 		Thread.sleep(2000);
-		uploadfile("C:\\Users\\Brigosha_Guest\\Downloads\\ResumeBrigosha.pdf");
+		// uploadfile("C:\\Users\\Brigosha_Guest\\Desktop\\EventPic.jpg");
+
+		rb.delay(2000);
+		StringSelection sb = new StringSelection("C:\\Users\\Brigosha_Guest\\Downloads\\ResumeBrigosha.pdf");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sb, null);
+
+		// Contrl+V
+		rb.keyPress(KeyEvent.VK_CONTROL);
+		rb.keyPress(KeyEvent.VK_V);
+		rb.delay(2000);
+
+		rb.keyRelease(KeyEvent.VK_CONTROL);
+		rb.keyRelease(KeyEvent.VK_V);
+		rb.delay(9000);
+		// Enter
+
+		rb.keyPress(KeyEvent.VK_ENTER);
+		rb.delay(9000);
+		rb.keyRelease(KeyEvent.VK_ENTER);
 
 		System.out.println("Magazine pdf file is uploaded..");
 
-		Thread.sleep(3000);
-		AddBtn.click();
+		// Thread.sleep(3000);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8000));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']/span[text()='Add']")));
+		driver.findElement(By.xpath("//button[@type='submit']/span[text()='Add']")).click();
+		// AddBtn.click();
 		Thread.sleep(1000);
-		System.out.println("Magazine uploaded successfully .");
+		System.out.println("Magazine gets successfully uploaded .");
 
 	}
 
@@ -125,7 +178,6 @@ public class EMagazinePage {
 		for (int i = 0; i <= 2; i++) {
 			BackwardsPaginationBtn.click();
 		}
-
 
 	}
 

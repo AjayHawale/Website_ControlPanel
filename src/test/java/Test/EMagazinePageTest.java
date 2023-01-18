@@ -1,5 +1,7 @@
 package Test;
 
+import java.awt.AWTException;
+
 import org.testng.annotations.Test;
 
 import BaseB.BaseT;
@@ -14,7 +16,7 @@ public class EMagazinePageTest extends BaseT {
 	}
 	
 	@Test(priority=6,groups={"EMagazine"})
-	public void addingMagazine() throws InterruptedException {
+	public void addingMagazine() throws InterruptedException, AWTException {
 		mgz.magazineName();
 		mgz.uploadFile();
 	}
