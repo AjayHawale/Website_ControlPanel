@@ -15,6 +15,9 @@ import org.testng.annotations.BeforeSuite;
 import PageOrder.EMagazinePage;
 import PageOrder.EventsPage;
 import PageOrder.LocationPage;
+import PageOrder.TechConnectivity;
+import PageOrder.TechMobility;
+import PageOrder.WeGetInTouch;
 import PageOrder.WeJoinUs;
 import PageOrder.WeOurStory;
 import PageOrder.WeTeams;
@@ -31,6 +34,9 @@ public class BaseT {
 	public WeOurStory wos=null;
 	public WeTeams wt=null;
 	public WeJoinUs wj=null;
+	public WeGetInTouch wgit=null;
+	public TechMobility tm=null;
+	public TechConnectivity tcn=null;
 	
 	public static String ReadConfig(String key) {
 		try {
@@ -80,6 +86,9 @@ public class BaseT {
 		wos=new WeOurStory(driver);
 		wt=new WeTeams(driver);
 		wj=new WeJoinUs(driver);
+		wgit=new WeGetInTouch(driver);
+		tm=new TechMobility(driver);
+		tcn=new TechConnectivity(driver);
 	}
 
 	public void waittill(int wait) throws InterruptedException {

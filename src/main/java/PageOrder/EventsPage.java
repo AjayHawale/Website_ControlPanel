@@ -145,10 +145,10 @@ public class EventsPage {
 
 		//Thread.sleep(3000);
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(8000));
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']/span[text()='Add']")));
-		driver.findElement(By.xpath("//button[@type='submit']/span[text()='Add']")).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-default ant-btn-block addbtn']")));
+		driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-default ant-btn-block addbtn']")).click();
 		//AddBtn.click();
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		System.out.println("Events gets successfully created.");
 
 	}
