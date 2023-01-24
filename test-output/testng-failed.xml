@@ -3,26 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Test.EventsPageTest">
-        <methods>
-          <include name="EventsDelete"/>
-          <include name="PaginationTest"/>
-          <include name="initilization"/>
-          <include name="EventsEdit"/>
-          <include name="objectInitiate"/>
-        </methods>
-      </class> <!-- Test.EventsPageTest -->
-      <class name="Test.EMagazinePageTest">
-        <methods>
-          <include name="editingMagazine"/>
-          <include name="enteringMagazinePage"/>
-          <include name="paginationTest"/>
-          <include name="initilization"/>
-          <include name="objectInitiate"/>
-          <include name="deleteMagazine"/>
-          <include name="addingMagazine"/>
-        </methods>
-      </class> <!-- Test.EMagazinePageTest -->
       <class name="Test.LocationPageTest">
         <methods>
           <include name="enteringLoc"/>
@@ -33,6 +13,21 @@
           <include name="objectInitiate"/>
         </methods>
       </class> <!-- Test.LocationPageTest -->
+      <class name="Test.EMagazinePageTest">
+        <methods>
+          <include name="paginationTest"/>
+          <include name="initilization"/>
+          <include name="objectInitiate"/>
+          <include name="deleteMagazine"/>
+        </methods>
+      </class> <!-- Test.EMagazinePageTest -->
+      <class name="Test.EventsPageTest">
+        <methods>
+          <include name="initilization"/>
+          <include name="PaginationTest"/>
+          <include name="objectInitiate"/>
+        </methods>
+      </class> <!-- Test.EventsPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

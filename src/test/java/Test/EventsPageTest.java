@@ -14,6 +14,7 @@ public class EventsPageTest extends BaseT {
 		ev.logoDisplay();
 	}
 
+	
 	@Test(priority = 1)
 	public void EventsAdd() throws InterruptedException, AWTException {
 		ev.enterEventsMod();

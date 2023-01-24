@@ -143,6 +143,7 @@ public class EMagazinePage {
 	}
 
 	public void editMagazine() throws InterruptedException {
+		Thread.sleep(4000);
 		EditBtn.click();
 		Thread.sleep(3000);
 		MagzTitleField.clear();
@@ -152,6 +153,7 @@ public class EMagazinePage {
 	}
 
 	public void DeleteMagazine() throws InterruptedException {
+		Thread.sleep(4000);
 		deleteBtn.click();
 		Thread.sleep(2000);
 		ConfirmDelBtn.click();
@@ -159,7 +161,7 @@ public class EMagazinePage {
 	}
 
 	public void Nextpagination() throws InterruptedException {
-
+		Thread.sleep(2000);
 		WebElement NextPaginationBtn = driver.findElement(By.xpath("(//button[@class='ant-pagination-item-link'])[2]"));
 
 		for (int i = 0; i <= 2; i++) {
@@ -171,6 +173,7 @@ public class EMagazinePage {
 	}
 
 	public void Backpagination() throws InterruptedException {
+		Thread.sleep(2000);
 
 		WebElement BackwardsPaginationBtn = driver
 				.findElement(By.xpath("(//button[@class='ant-pagination-item-link'])[1]"));

@@ -9,13 +9,13 @@ public class WeTeamsTest extends BaseT{
 	
 	
 
-	@Test(priority=21)
+	@Test(priority=21, dependsOnGroups = { "OurStory" })
 	public void EnterInTeamMod() {
 		wt.EnterTeamsMod();
 		wt.JoinUsbt();
 		
 	}
-	@Test(priority=22)
+	@Test(priority=22, groups={"Teams"})
 public void EnterInIlinkIn() throws InterruptedException {
 		wt.CEOLinkInAcc();
 		

@@ -49,6 +49,7 @@ public class LocationPage {
 	}
 
 	public void LocationMod() throws InterruptedException {
+		Thread.sleep(2000);
 		LocationMod.click();
 		Thread.sleep(2000);
 		System.out.println(" We Enter in Location Page.");

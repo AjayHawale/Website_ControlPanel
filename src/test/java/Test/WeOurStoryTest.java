@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import BaseB.BaseT;
 
 public class WeOurStoryTest extends BaseT{
-	@Test(priority=14)
+	@Test(priority=14, dependsOnGroups = { "Locations" })
 	public void MainPage() throws InterruptedException {
 		wos.Logodisplay();
 		wos.WeModuleDisplay();
@@ -18,7 +18,7 @@ public class WeOurStoryTest extends BaseT{
 		wos.IOTLearnMoreBtn();
 	}
 
-	@Test(priority=16)
+	@Test(priority=16, groups={"OurStory"})
 	
 	public void EventSection() throws InterruptedException {
 		wos.EventsCards();

@@ -9,6 +9,7 @@ import java.time.Duration;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -69,6 +70,7 @@ public class EventsPage {
 	}
 
 	public void enterEventsMod() throws InterruptedException {
+		Thread.sleep(5000);
 		EventsModule.click();
 		System.out.println("Enter in Events section");
 		Thread.sleep(2000);
@@ -148,12 +150,26 @@ public class EventsPage {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-default ant-btn-block addbtn']")));
 		driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-default ant-btn-block addbtn']")).click();
 		//AddBtn.click();
+		
+		//WebElement SubmitBtn = driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-default ant-btn-block addbtn']"));
+	//	JavascriptExecutor executor = (JavascriptExecutor)driver;
+	//	executor.executeScript("arguments[0].click();", SubmitBtn);
+		
+		
+		
+		
+		
+		
+		
+		
 		Thread.sleep(5000);
 		System.out.println("Events gets successfully created.");
 
 	}
 
 	public void editEvent() throws InterruptedException {
+		//EventsModule.click();
+		Thread.sleep(2000);
 		EditEvent.click();
 		Thread.sleep(2000);
 		DescriptionEdit.clear();
@@ -168,6 +184,7 @@ public class EventsPage {
 	}
 
 	public void deleteEvent() throws InterruptedException {
+		Thread.sleep(3000);
 		EventsDeleteBtn.click();
 		Thread.sleep(2000);
 		DeleteFinalBtn.click();
@@ -175,6 +192,7 @@ public class EventsPage {
 	}
 
 	public void pagination() throws InterruptedException {
+		Thread.sleep(3000);
 		ThirdPaginationBtn.click();
 		Thread.sleep(2000);
 
