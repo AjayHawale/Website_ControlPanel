@@ -149,6 +149,8 @@ public class EMagazinePage {
 		MagzTitleField.clear();
 		Thread.sleep(3000);
 		MagzTitleField.sendKeys("New Title Added");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		System.out.println("Magazine Edit is done..");
 	}
 

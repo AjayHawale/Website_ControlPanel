@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LocationPage {
 	WebDriver driver;
 
-	@FindBy(xpath = "LocationPage")
+	@FindBy(xpath = "(//span[@class='ant-menu-title-content'])[5]")
 	WebElement LocationMod;
 	@FindBy(xpath = "//button[@type='button']/span[text()='ADD LOCATION']")
 	WebElement addLocationBtn;
@@ -49,9 +49,9 @@ public class LocationPage {
 	}
 
 	public void LocationMod() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		LocationMod.click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		System.out.println(" We Enter in Location Page.");
 		addLocationBtn.click();
 	}
@@ -63,18 +63,21 @@ public class LocationPage {
 		driver.findElement(By.xpath("//input[@id='officeName']")).sendKeys("Corporate" + officeType);
 	}
 
-	public void AddLocation() {
+	public void AddLocation() throws InterruptedException {
+		Thread.sleep(2000);
 		// random string of length 8 composed of alphabetic characters
 		String officeType = RandomStringUtils.randomAlphabetic(6);
 		System.out.println("The location is .. " + officeType);
 		driver.findElement(By.xpath("//input[@id='locationName']")).sendKeys("Corporate" + officeType);
 	}
 
-	public void addingAddress(String address) {
+	public void addingAddress(String address) throws InterruptedException {
+		Thread.sleep(2000);
 		AddressField.sendKeys(address);
 	}
 
-	public void AddOfficePhone() {
+	public void AddOfficePhone() throws InterruptedException {
+		Thread.sleep(2000);
 		Random r = new Random();
 
 		int i1 = r.nextInt(8); // returns random number between 0 and 7
@@ -86,16 +89,20 @@ public class LocationPage {
 		String phoneNumber = String.format("%d%d%d%03d%04d", i1, i2, i3, i4, i5);
 
 		driver.findElement(By.xpath("//input[@placeholder='Enter 10 digit phone number']")).sendKeys(phoneNumber);
+		Thread.sleep(3000);
 		AddBtn.click();
 
 	}
 
 	public void editLocation(String Description) throws InterruptedException {
+		Thread.sleep(4000);
 		EditBtn.click();
-		Thread.sleep(2000);
-		AddressField.clear();
-		Thread.sleep(2000);
-		AddressField.sendKeys(Description);
+		Thread.sleep(5000);
+		//AddressField.clear();
+		driver.findElement(By.xpath("(//textarea[@id='detail'])[2]")).clear();
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("(//textarea[@id='detail'])[2]")).sendKeys(Description);
+		Thread.sleep(4000);
 		SaveChangesBtn.click();
 		System.out.println("Location has been edited...");
 	}
@@ -110,8 +117,9 @@ public class LocationPage {
 
 		WebElement NextPaginationBtn = driver.findElement(By.xpath("(//button[@class='ant-pagination-item-link'])[2]"));
 
-		for (int i = 0; i <= 2; i++) {
+		for (int i = 0; i <= 3; i++) {
 			NextPaginationBtn.click();
+			Thread.sleep(1000);
 		}
 
 		System.out.println("Forward Pagination working fine in location page");
@@ -123,8 +131,9 @@ public class LocationPage {
 		WebElement BackwardsPaginationBtn = driver
 				.findElement(By.xpath("(//button[@class='ant-pagination-item-link'])[1]"));
 
-		for (int i = 0; i <= 2; i++) {
+		for (int i = 0; i <= 3; i++) {
 			BackwardsPaginationBtn.click();
+			Thread.sleep(1000);
 		}
 
 	}
