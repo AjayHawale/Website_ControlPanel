@@ -42,7 +42,10 @@ public class LocationPage {
 	WebElement FrwdPagination;
 	@FindBy(xpath = "(//button[@class='ant-pagination-item-link'])[1]")
 	WebElement BackPagination;
-
+	
+	
+	
+		
 	public LocationPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
